@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* .bgred {
+  margin: 10px;
+  background-color: red;
+}
+
+.textwhite {
+  color: white;
+} */
+
+/* 
+    case formatting
+
+    1. lower case -> salam dunya
+    2. upper case -> SALAM DUNYA
+
+    1. kebab case -> salam-dunya-salam-dunya
+    2. camel case -> salamDunyaSalamDunya
+    3. pascal case -> SalamDunyaSalamDunya
+    4. snake_case -> salam_dunya_salam_dunya 
+
+    
+    
+
+
+*/
+
+/* .description {
+  background-color: red;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 5px solid blue;
+}
+
+.description1 {
+  border-color: yellow;
+} */
+
+/* sharp -> diyes -> rasotka turme # */
+/* #desc2 {
+  background-color: gold;
+} */
+/* Selector Specificity */
+
+/* .description {
+  color: green;
+}
+
+#desc1 {
+  color: gold !important;
+}
+        
+p {
+  color: red !important;
+} */
+
+.minion {
+  width: 600px;
+  height: 600px;
+  border: 4px solid green;
+  background-image: url(https://freepngimg.com/thumb/minions/111051-minions-free-hd-image-thumb.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+
+.test {
+  margin: 20px 0;
+
+  background: url(https://static.vecteezy.com/system/resources/previews/036/226/872/non_2x/ai-generated-nature-landscapes-background-free-photo.jpg)
+    no-repeat fixed center;
+  background-size: cover;
+  height: 450px;
+  border: 10px solid darkred;
+}
+
+h1 {
+  font-style: italic;
+  font-weight: 100;
+  text-transform: capitalize;
+}

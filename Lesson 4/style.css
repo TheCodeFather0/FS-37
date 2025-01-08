@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-title {
+  color: #1560bd;
+  text-align: center;
+  font-size: 60px;
+}
+
+.box {
+  width: 31%;
+  padding: 20px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #f2f7ff;
+}
+
+.box-title {
+  margin-bottom: 20px;
+  text-decoration: underline lightblue;
+}
+
+.box-description {
+  font-size: 18px;
+}
+
+.parent-box {
+  width: 80%;
+  margin: 20px auto;
+}

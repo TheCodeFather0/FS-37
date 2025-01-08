@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: red;
+}
+
+/* 1. test 2.p */
+
+/* kod tekrari etmeyek deye */
+
+.text + .p {
+  color: red;
+}

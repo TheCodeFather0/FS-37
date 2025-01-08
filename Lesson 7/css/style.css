@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+/* 
+    display
+    
+    1. inline -> a,u,b,strong,em,img
+    2. block  -> p,div
+    3. inline-block
+    4. none
+
+    inline
+*/
+
+.boxes {
+  padding: 10px;
+  margin: auto;
+  width: 1200px;
+  background-color: bisque;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 350px;
+  padding: 10px;
+  border: 2px solid darkred;
+}
+
+.box img {
+  width: 100%;
+}
+
+.parent {
+  width: 1200px;
+  height: 600px;
+  margin: 50px auto;
+  background-color: lightseagreen;
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 10px;
+  /* flex-direction: column; */
+  /*
+  align-items: center;
+  justify-content: space-between; */
+}
+
+.child {
+  /* flex-basis: 200px; */
+  height: 50px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background-color: #000;
+  flex-basis: 400px;
+}
+
+.child1 {
+  flex-shrink: 5;
+}
+.child2 {
+  flex-shrink: 1;
+}
+.child3 {
+  flex-shrink: 3;
+}
+.child4 {
+}
+
+/* 
+
+   10x =  1200
+   x = 120
+
+
+*/
