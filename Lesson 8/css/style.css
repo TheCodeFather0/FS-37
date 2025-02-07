@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+table,
+th,
+td {
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+table {
+  margin: 20px;
+  width: 800px;
+  /* table-layout: fixed; */
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: pink;
+}
+
+tbody {
+  color: #fff;
+  background-color: darkcyan;
+}

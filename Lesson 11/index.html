@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form method="get">
+      <div>
+        <label for="nameSurnameInp">Ad soyad</label>
+        <input
+          required
+          type="text"
+          minlength="5"
+          maxlength="10"
+          name="adSoyad"
+          autocomplete="off"
+          id="nameSurnameInp"
+          placeholder="Ad soyad"
+        />
+      </div>
+
+      <div>
+        <textarea rows="4" cols="10" aria-selected=""></textarea>
+      </div>
+
+      <div>
+        <label for="ageInp">Yaş</label>
+        <input
+          type="number"
+          placeholder="Yaş"
+          min="18"
+          max="65"
+          name="yash"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="emailInp">Email</label>
+        <input
+          type="email"
+          id="emailInp"
+          placeholder="Email"
+          name="email"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="passwordInp">Password</label>
+        <input
+          required
+          id="passwordInp"
+          type="password"
+          name="password"
+          placeholder="Password"
+        />
+        <button id="showHideBtn">goster</button>
+      </div>
+
+      <div class="checkbox">
+        <h3>Sevdiyiniz yemekleri secin</h3>
+        <label for="dolma">Dolma</label>
+        <input type="checkbox" name="dolma" id="dolma" />
+
+        <label for="dovga">dovga</label>
+        <input type="checkbox" name="dolma" id="dovga" />
+
+        <label for="plov">plov</label>
+        <input type="checkbox" name="dolma" id="plov" />
+      </div>
+
+      <div class="checkbox">
+        <h3>Kisisen yoxsa qadin?</h3>
+        <label for="kisi">Kisi</label>
+        <input type="radio" name="gender" value="0" id="kisi" />
+
+        <label for="qadin">qadin</label>
+        <input type="radio" name="gender" value="1" id="qadin" checked />
+      </div>
+
+      <label for="seherler">Seheri sec</label>
+      <select name="seherler" id="seherler">
+        <optgroup label="yaxin seherler">
+          <option value="4">Baki</option>
+          <option value="1">Sumqayit</option>
+        </optgroup>
+
+        <optgroup label="uzaq seherler">
+          <option value="2">Gence</option>
+          <option value="3">Naxcivan</option>
+        </optgroup>
+      </select>
+
+      <input type="file" />
+      <input type="submit" value="Qeydiyyatdan keç" />
+      <button type="reset">Sıfırla</button>
+    </form>
+
+    <script>
+      const passwordInp = document.querySelector("#passwordInp");
+      const showHideBtn = document.querySelector("#showHideBtn");
+
+      showHideBtn.onclick = function () {
+        if (passwordInp.getAttribute("type") === "password") {
+          passwordInp.setAttribute("type", "text");
+          showHideBtn.innerText = "Gizlet";
+        } else {
+          passwordInp.setAttribute("type", "password");
+          showHideBtn.innerText = "Goster";
+        }
+      };
+    </script>
+  </body>
+</html>

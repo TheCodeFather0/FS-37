@@ -1,0 +1,68 @@
+/* .box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  position: absolute;
+
+  animation-name: yuxaridanAsagiya;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  transition-property: all;
+}
+
+@keyframes yuxaridanAsagiya {
+  0%,
+  100% {
+    left: 0;
+  }
+
+  50% {
+    left: 50%;
+    transform: scale(1.1);
+    border-radius: 50%;
+    background-image: linear-gradient(pink, purple);
+  }
+} */
+
+* {
+  transition: all 0.5s;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loader {
+  width: 150px;
+  height: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 15px solid;
+  border-radius: 50%;
+  border-color: yellow cadetblue chartreuse aquamarine;
+  animation: loader 3s forwards linear infinite;
+}
+
+.website-content {
+  animation: siteContent 3.5s forwards ease;
+}
+
+.loader p {
+  font-weight: bold;
+}
+
+@keyframes loader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

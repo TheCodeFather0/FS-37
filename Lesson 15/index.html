@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <div class="logoAndNav">
+          <div class="logo"><a href="./index.html"> ./Logo </a></div>
+          <nav id="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+          </nav>
+          <div class="bars" id="bars">
+            <img
+              src="./images/bars-svgrepo-com.svg"
+              id="barsImage"
+              alt="bars"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="pageInfo">
+        <h1>Front-End proqramlaşdırma kursu</h1>
+        <p>
+          Front-End proqramçılar veb əsaslı proqram təminatının, veb-saytların
+          və istifadəçi interfeyslərinin hazırlanmasını (kodlaşdırılmasını)
+          həyata keçirirlər. Bu mütəxəssislər dünyanın istənilən nöqtəsindən
+          distant (remote) olaraq çalışıb, yüksək gəlir əldə edə bilirlər
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="cards">
+        <div class="card">
+          <p>card 1</p>
+        </div>
+        <div class="card">
+          <p>card 2</p>
+        </div>
+        <div class="card">
+          <p>card 3</p>
+        </div>
+        <div class="card">
+          <p>card 4</p>
+        </div>
+        <div class="card">
+          <p>card 5</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      bars.onclick = function () {
+        if (barsImage.src.includes("bars-svgrepo-com.svg")) {
+          barsImage.src = "./images/times-svgrepo-com.svg";
+        } else {
+          barsImage.src = "./images/bars-svgrepo-com.svg";
+        }
+        nav.classList.toggle("showMobileMenu");
+      };
+    </script>
+  </body>
+</html>

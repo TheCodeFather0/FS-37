@@ -1,0 +1,173 @@
+/* 
+    transition
+    transform
+    animation
+*/
+
+* {
+  box-sizing: border-box;
+}
+/* 1000ms = 1s */
+/* .box {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition: all 0.6s ease;
+  width: 200px;
+  height: 200px;
+  margin: 30px auto;
+  background-color: red;
+} */
+
+/* .box:hover {
+  width: 250px;
+  height: 250px;
+  background-color: blue;
+}
+
+.parent {
+  width: 1200px;
+  margin: auto;
+  border: 3px solid red;
+}
+
+.child {
+  width: 20%;
+  margin: 10px;
+  padding: 10px;
+  background-color: cadetblue;
+
+  transition-duration: 0.8s;
+  transition-property: all;
+}
+
+.parent:hover .child {
+  width: 98%;
+}
+
+.linear {
+  transition-timing-function: linear;
+}
+
+.ease {
+  transition-timing-function: ease;
+}
+
+.ease-in {
+  transition-timing-function: ease-in;
+}
+
+.ease-out {
+  transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+.step-start {
+  transition-timing-function: step-start;
+}
+
+.step-end {
+  transition-timing-function: step-end;
+}
+
+.steps {
+  transition-timing-function: steps(3);
+}
+
+.cubic-beizer {
+  background-color: red;
+  transition-timing-function: cubic-bezier(1, -0.01, 0.2, 0.89);
+} */
+/* 
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: rebeccapurple;
+  margin: 50px auto;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  border: 2px solid green;
+}
+
+.box img {
+  transition: all 0.5s ease;
+
+  width: 100%;
+  height: 100%;
+} */
+
+/* .box:hover { */
+/* transform: translate(); */
+/* transform: skew(-180deg, 180deg); */
+/* transform: translateY(50%); */
+/* } */
+
+/* .box:hover img {
+  transform: scale(1.1);
+} */
+
+/* rotate,scale,skew */
+
+/* .japan {
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  position: relative;
+  border: 3px solid;
+}
+
+.square {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+
+.square::after {
+  content: "";
+  background-color: red;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+  display: block;
+} */
+
+.cards {
+  display: flex;
+  width: 1400px;
+  justify-content: flex-end;
+  margin: auto;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  background-color: red;
+}
+
+.cards .card:nth-child(3),
+.cards .card:nth-child(5) {
+  top: 50px;
+}
+
+.cards .card:nth-child(2) {
+  top: 100px;
+}
+
+.cards .card:nth-child(1) {
+  top: 150px;
+}

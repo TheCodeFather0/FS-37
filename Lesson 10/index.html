@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form method="post">
+      <div>
+        <label for="nameSurnameInp">Ad soyad</label>
+        <input
+          required
+          type="text"
+          minlength="5"
+          maxlength="10"
+          name="adSoyad"
+          autocomplete="off"
+          id="nameSurnameInp"
+          placeholder="Ad soyad"
+        />
+      </div>
+
+      <div>
+        <label for="ageInp">Yaş</label>
+        <input
+          type="number"
+          placeholder="Yaş"
+          min="18"
+          max="65"
+          name="yash"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="emailInp">Email</label>
+        <input
+          type="email"
+          id="emailInp"
+          placeholder="Email"
+          name="email"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="passwordInp">Password</label>
+        <input
+          required
+          id="passwordInp"
+          type="password"
+          name="password"
+          placeholder="Password"
+        />
+        <button id="showHideBtn">goster</button>
+      </div>
+
+      <input type="file" />
+      <input type="submit" value="Qeydiyyatdan keç" />
+      <button type="reset">Sıfırla</button>
+    </form>
+
+    <script>
+      const passwordInp = document.querySelector("#passwordInp");
+      const showHideBtn = document.querySelector("#showHideBtn");
+
+      showHideBtn.onclick = function () {
+        if (passwordInp.getAttribute("type") === "password") {
+          passwordInp.setAttribute("type", "text");
+          showHideBtn.innerText = "Gizlet";
+        } else {
+          passwordInp.setAttribute("type", "password");
+          showHideBtn.innerText = "Goster";
+        }
+      };
+    </script>
+  </body>
+</html>
