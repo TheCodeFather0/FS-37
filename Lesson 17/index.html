@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <a href="./index.html">İSİMEMEN</a>
+          </div>
+          <div class="links">
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">work with us</a>
+            <a href="#">client wins</a>
+            <a href="#">employers</a>
+          </div>
+          <div class="bars" id="bars">
+            <img src="./images/bars.svg" alt="bars" />
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="mobileNav" id="mobileNav">
+      <a href="#">home</a>
+      <a href="#">about</a>
+      <a href="#">work with us</a>
+      <a href="#">client wins</a>
+      <a href="#">employers</a>
+    </div>
+
+    <div class="hero">
+      <div class="container">
+        <h1>Welcome to your reset</h1>
+      </div>
+    </div>
+
+    <section class="info">
+      <div class="container">
+        <p>
+          We are a career development & business consultancy for women of color
+          eager to elevate themselves, uncover their life’s purpose, multiply
+          their income, and experience fulfilled lives.
+        </p>
+      </div>
+    </section>
+
+    <section class="info2">
+      <div class="container">
+        <p>
+          We provide purpose-building programs that blend faith, self, and
+          wealth.
+        </p>
+      </div>
+    </section>
+
+    <section class="programs">
+      <div class="container">
+        <h3 class="title">Our Programs</h3>
+
+        <div class="cards">
+          <div class="card">
+            <img src="./images/qiz1.svg" alt="" />
+            <div>
+              <h3>Individuals</h3>
+              <p>
+                Undervalued and underpaid? Let's change that. Our
+                career-development program, Fulfilled, is here to provide you
+                with the resources and tools you need to not only go for a
+                higher-paying job, but secure it. We believe it’s already yours.
+              </p>
+            </div>
+            <a href="#">Reimagine Now</a>
+          </div>
+          <div class="card">
+            <img src="./images/qiz3.svg" alt="" />
+            <div>
+              <h3>Employers</h3>
+              <p>
+                Through our Fulfilled Work Framework, we advise employers on how
+                to better position employees of color to unlock their potential
+                and take ownership of their careers while increasing retention
+                rates all around.
+              </p>
+            </div>
+            <a href="#">Learn More</a>
+          </div>
+          <div class="card">
+            <img src="./images/qiz2.svg" alt="" />
+            <div>
+              <h3>Leaders</h3>
+              <p>
+                We coach leaders, business owners, and influencers on how to
+                maximize their value, unleash their power, and grow their
+                success. From where we’re looking, there’s no glass ceiling.
+              </p>
+            </div>
+            <a href="#">Explore More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="purpose">
+      <marquee dir="ltr"
+        >Your purpose is calling.It’s time to make a move.</marquee
+      >
+    </section>
+
+    <script>
+      document.getElementById("bars").onclick = function () {
+        document.getElementById("mobileNav").classList.toggle("showMobileNav");
+      };
+    </script>
+  </body>
+</html>

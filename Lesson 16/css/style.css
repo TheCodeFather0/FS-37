@@ -1,0 +1,144 @@
+:root {
+  --primary: #435072;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.header-top {
+  font-size: 13px;
+  display: flex;
+  height: 65px;
+  padding: 0 30px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary);
+
+  .contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  select {
+    border: none;
+    color: #fff;
+    background-color: var(--primary);
+  }
+
+  .social-media {
+    display: flex;
+    gap: 10px;
+
+    a {
+      border-radius: 5px;
+      width: 20px;
+      height: 20px;
+      display: grid;
+      place-items: center;
+      border: 1px solid #fff;
+    }
+  }
+}
+
+nav .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  gap: 40px;
+
+  margin-top: 10px;
+  background-color: var(--primary);
+
+  a {
+    color: #fff;
+  }
+}
+
+.dropdown-menu {
+  opacity: 0;
+  margin-top: 10px;
+  width: 150px;
+  visibility: hidden;
+  position: absolute;
+  transition: 0.5s;
+  z-index: 4;
+  background-color: #748ece;
+
+  a {
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+/* dropdown menu */
+
+.cards {
+  padding: 50px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #ddd;
+}
+
+.cards .card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.card p {
+  margin-top: 30px;
+}
+
+.card::after {
+  content: "";
+  height: 15px;
+  width: 0;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 1s;
+  border-radius: 0 0 20px 20px;
+  background-color: var(--primary);
+}
+
+.card:hover {
+  transform: translateY(-5px) !important;
+}
+
+.card:hover::after {
+  width: 100%;
+}
