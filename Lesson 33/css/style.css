@@ -1,0 +1,33 @@
+* {
+  transition: all 0.5s;
+}
+
+.hide {
+  opacity: 0;
+}
+
+button {
+  width: 120px;
+  height: 30px;
+  background-color: #fff;
+}
+.showBtn {
+  border: 2px solid green;
+}
+.hideBtn {
+  border: 2px solid red;
+}
+
+.dark,
+.dark * {
+  background-color: #212121;
+  color: #fff;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+  padding: 10px;
+  border-collapse: collapse;
+}

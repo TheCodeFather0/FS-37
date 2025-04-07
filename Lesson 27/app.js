@@ -26,9 +26,23 @@
 // console.log(students);
 
 // 2 ölçülü
-const matris = [
-  [1, 2, 3, 3434, 34, 34, 32],
-  [4, 5, 6],
-  [7, 8, 9],
-];
-console.log(matris.flat());
+// const matris = [
+//   [1, 2, 3, 3434, 34, 34, 32],
+//   [4, 5, 6],
+//   [7, 8, 9],
+// ];
+// console.log(matris.flat());
+
+const a = "banana";
+let newA = "";
+
+for (let i = 0; i < a.length; i++) {
+  if (a[i] === "a") {
+    newA += "b";
+  } else if (a[i] === "b") {
+    newA += "a";
+  } else {
+    newA += a[i];
+  }
+}
+console.log(newA);
