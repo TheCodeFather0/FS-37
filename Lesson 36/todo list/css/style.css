@@ -23,12 +23,12 @@ table {
 }
 
 .completed {
-  background-color: green;
+  background-color: blue;
   color: #fff;
 }
 
 .notCompleted {
-  background-color: red;
+  background-color: rgb(207, 5, 5);
   color: #fff;
 }
 

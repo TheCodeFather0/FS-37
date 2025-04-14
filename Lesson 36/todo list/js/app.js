@@ -1,24 +1,22 @@
-const newTodoInp = document.querySelector("#newTodoInp");
+const newTodoInp = document.querySelector("#newInp");
 const addNewTodoForm = document.querySelector("#addNewTodoForm");
 
 const todos = [
-  { id: 0, todo: "ders oxy", isCompleted: true },
-  { id: 1, todo: "dersden sonra eve get", isCompleted: false },
-  { id: 2, todo: "js tekrar et", isCompleted: false },
-  { id: 3, todo: "tapsiriqlari yaz", isCompleted: false },
+  { id: 0, ed: "js yaz", eddin: true },
+  { id: 1, ed: "cerimeni ode", eddin: false },
+  { id: 2, ed: "musahibeye get", eddin: false },
+  { id: 3, ed: "usaglarnan gorus", eddin: false },
 ];
 
 const showTodos = (arr) => {
   const tbody = document.querySelector("#tbody");
   tbody.innerHTML = "";
   arr.forEach((item, index, arr) => {
-    tbody.innerHTML += `<tr class="${
-      item.isCompleted ? "completed" : "notCompleted"
-    }">
-              <td>${item.todo}</td>
-              <td><input type="checkbox" ${
-                item.isCompleted ? "checked" : null
-              } onchange="setCompleted('${item.id}')"/></td>
+    tbody.innerHTML += `<tr class="${item.eddin ? "completed" : "notCompleted"
+      }">
+              <td>${item.ed}</td>
+              <td><input type="checkbox" ${item.eddin ? "checked" : null
+      } onchange="setCompleted('${item.id}')"/></td>
               <td>
                 <button onclick="editTodo('${item.id}')">edit</button>
                 <button onclick="deleteTodo('${item.id}')">delete</button>
@@ -30,14 +28,14 @@ const showTodos = (arr) => {
 const setCompleted = (id) => {
   todos.map((item) => {
     if (item.id == id) {
-      item.isCompleted = !item.isCompleted;
+      item.eddin = !item.eddin;
     }
   });
   showTodos(todos);
 };
 
 const deleteTodo = (id) => {
-  const isAgree = confirm("silmək istədiyinizə əminsiniz?");
+  const isAgree = confirm("silmek isteyirisniz?");
   if (isAgree) {
     todos.forEach((item, index) => {
       if (item.id == id) {
@@ -51,12 +49,12 @@ const deleteTodo = (id) => {
 const editTodo = (id) => {
   todos.map((item) => {
     if (item.id == id) {
-      const newTodo = prompt("deyisdirin", item.todo);
+      const newTodo = prompt("deyisdirin", item.ed);
       if (newTodo) {
-        item.todo = newTodo;
+        item.ed = newTodo;
         showTodos(todos);
       } else {
-        alert("duz emelli yaz!");
+        alert("ae duz yaz sopullu!");
       }
     }
   });
@@ -66,12 +64,12 @@ const adNewTodo = (e) => {
   e.preventDefault();
   const newTodo = {
     id: new Date().getTime(),
-    todo: newTodoInp.value,
-    isCompleted: false,
+    ed: newInp.value,
+    eddin: false,
   };
   todos.unshift(newTodo);
   showTodos(todos);
-  newTodoInp.value = "";
+  newInp.value = "";
 };
 
 addNewTodoForm.addEventListener("submit", adNewTodo);
