@@ -1,0 +1,24 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: Arial;
+}
+
+.container {
+	width:70vw;
+	margin:20px auto;
+}
+
+.users {
+	grid-gap: 10px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.user {
+	padding:10px;
+	border:2px solid cadetblue;
+}

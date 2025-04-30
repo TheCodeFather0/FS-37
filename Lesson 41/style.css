@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.addNewUser,
+.students_container,
+.teachers_container {
+  max-width: 80%;
+  margin: 15px auto;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+}
+
+.students_container {
+  margin-top: 50px;
+  padding-top: 50px;
+  border-top: 3px solid rgba(14, 233, 14, 0.819);
+}
+
+.cards {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  padding: 10px;
+  display: flex;
+  border-radius: 5px;
+  transition: all 0.3s;
+  align-items: center;
+  justify-content: space-between;
+  border: 3px solid rgba(14, 233, 14, 0.819);
+
+  &:hover {
+    color: #fff;
+    transform: scale(1.05);
+    background-color: rgba(14, 233, 14, 0.819);
+  }
+}
+
+.zibil_qabi {
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+
+.addNewUser input,
+.addNewUser select {
+  padding: 10px;
+}
